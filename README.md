@@ -1,12 +1,12 @@
 # choerodon-framework
 
-Choerodon Framework is a Microservices development framework based on Spring Cloud. You can use it as your parent's dependence in your service pom. And You can also use the dependency of Spring boot and Spring cloud.
+Choerodon Framework is a Microservices development framework based on Spring Cloud. You can use it as your parent's dependence in your service pom. And you can also use the dependency of Spring boot and Spring cloud.
 
 ## Modules
 
 There are a number of modules in Choerodon Framework, here is a quick overview:
 
-- [go-register-server](https://github.com/choerodon/go-register-server.git) - The microservice registration center is implemented in the go language, by tightly integrating the Kubinertes, the microservice registration is implemented by monitoring the state changes of the k8s pod, and pull the interface in the spring cloud eureka client service list.
+- [go-register-server](https://github.com/choerodon/go-register-server.git) - The microservice registration center is implemented in the Golang, by tightly integrating the Kubernetes, the microservice registration is implemented by monitoring the state changes of the k8s pod, and pull the interface in the spring cloud eureka client service list.
 - [api-gateway](https://github.com/choerodon/api-gateway.git) - Choerodon's gateway service is responsible for routing requests to real services. 
 - [register-server](https://github.com/choerodon/go-register-server.git)  - The microservice registration is implemented by monitoring the state changes of the k8s pod, and pull the interface in the spring cloud eureka client service list.
 - [config-server](https://github.com/choerodon/config-server.git) - Choerodon's configuration service is the configuration center for unified management of service configuration files.
@@ -22,8 +22,8 @@ There are a number of modules in Choerodon Framework, here is a quick overview:
 
 ## Dependencies
 
-* spring-boot: 1.5.3.RELEASE
-* spring-cloud: Dalston.SR4
+* Spring Boot: 1.5.3.RELEASE
+* Spring Cloud: Dalston.SR4
 
 ## Reporting Issues
 If you find any shortcomings or bugs, please describe them in the  [issue](https://github.com/choerodon/choerodon/issues/new?template=issue_template.md).
