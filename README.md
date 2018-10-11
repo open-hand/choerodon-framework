@@ -8,7 +8,6 @@ There are a number of modules in Choerodon Framework, here is a quick overview:
 
 - [go-register-server](https://github.com/choerodon/go-register-server ) - The microservice registration center is implemented in the Golang, by tightly integrating the Kubernetes, the microservice registration is implemented by monitoring the state changes of the Kubernetes pod, and pull the interface in the Spring Cloud eureka client service list.
 - [api-gateway](https://github.com/choerodon/api-gateway ) - Choerodon's gateway service is responsible for routing requests to real services. 
-- [register-server](https://github.com/choerodon/go-register-server )  - The microservice registration is implemented by monitoring the state changes of the k8s pod, and pull the interface in the spring cloud eureka client service list.
 - [config-server](https://github.com/choerodon/config-server ) - Choerodon's configuration service is the configuration center for unified management of service configuration files.
 - [manager-service](https://github.com/choerodon/manager-service ) - This service is the management center of the choerodon microservices framework. Its main functions include configuration management, route management, and swagger management.
 - [gateway-helper](https://github.com/choerodon/gateway-helper ) - Authenticating and limiting the requests from api-gateway, create JWT and return to api-gateway.
