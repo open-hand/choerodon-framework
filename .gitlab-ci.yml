@@ -7,14 +7,12 @@ stages:
 maven-test-branches:
   stage: mvn-package
   script:
-    - git_merge develop
     - mvn package source:jar-no-fork javadoc:jar -DskipTests=false
   only:
     - branches
   except:
     - master
     - tags
-    - develop
     - /^release-.*$/
     - /^hotfix-.*$/
 
@@ -24,7 +22,6 @@ maven-deploy-choerodon:
     - mvn clean install -DskipTests=true deploy -DaltDeploymentRepository=${CHOERODON_REPOSITORY_ID}::default::${CHOERODON_REPOSITORY_URL}
   only:
     - master
-    - develop
     - tags
     - /^release-.*$/
 

@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
-    <description>choerodon framework parent</description>
+    <description>Choerodon framework parent</description>
     <url>https://github.com/choerodon/choerodon/choerodon-framework</url>
 
     <parent>
