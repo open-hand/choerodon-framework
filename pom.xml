@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.10.0.RELEASE</version>
+    <version>0.11.0.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -61,12 +61,10 @@
         </developer>
     </developers>
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
         <skipTests>true</skipTests>
-        <spring-security-jwt.version>1.0.10.RELEASE</spring-security-jwt.version>
-        <spring-security-oauth2.version>2.3.5.RELEASE</spring-security-oauth2.version>
-        <spring-session.version>1.3.5.RELEASE</spring-session.version>
+        <java.version>1.8</java.version>
+        <choerodon.serviceBuild>false</choerodon.serviceBuild>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <choerodon.mainClass>io.choerodon.boot.ChoerodonApplication</choerodon.mainClass>
     </properties>
 
@@ -99,5 +97,47 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.gmavenplus</groupId>
+                <artifactId>gmavenplus-plugin</artifactId>
+                <version>1.6.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compileTests</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*Spec.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.choerodon</groupId>
+                <artifactId>choerodon-maven-plugin</artifactId>
+                <version>0.11.0.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>copy</goal>
+                            <goal>extract</goal>
+                            <goal>convert</goal>
+                            <goal>permission</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <serviceBuild>${choerodon.serviceBuild}</serviceBuild>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
