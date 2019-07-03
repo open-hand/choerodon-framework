@@ -66,6 +66,7 @@
         <choerodon.serviceBuild>false</choerodon.serviceBuild>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <choerodon.mainClass>io.choerodon.boot.ChoerodonApplication</choerodon.mainClass>
+        <choerodon.starters.version>0.12.0.RELEASE</choerodon.starters.version>
     </properties>
 
     <dependencyManagement>
@@ -124,7 +125,7 @@
             <plugin>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-maven-plugin</artifactId>
-                <version>0.11.0.RELEASE</version>
+                <version>${choerodon.starters.version}</version>
                 <executions>
                     <execution>
                         <goals>
