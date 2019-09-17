@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.12.0.RELEASE</version>
+    <version>0.13.0.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -66,7 +66,7 @@
         <choerodon.serviceBuild>false</choerodon.serviceBuild>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <choerodon.mainClass>io.choerodon.boot.ChoerodonApplication</choerodon.mainClass>
-        <choerodon.starters.version>0.12.0.RELEASE</choerodon.starters.version>
+        <choerodon.starters.version>0.13.0-SNAPSHOT</choerodon.starters.version>
     </properties>
 
     <dependencyManagement>
@@ -78,6 +78,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>io.choerodon</groupId>
+                <artifactId>choerodon-starter-parent</artifactId>
+                <version>${choerodon.starters.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -86,6 +93,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
+
     <build>
         <pluginManagement>
             <plugins>
