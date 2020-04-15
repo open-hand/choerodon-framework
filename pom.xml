@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.16.1-SNAPSHOT</version>
+    <version>0.16.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -15,8 +15,41 @@
     <parent>
         <groupId>org.hzero</groupId>
         <artifactId>hzero-parent</artifactId>
-        <version>1.3.0.RELEASE</version>
+        <version>1.4.0-SNAPSHOT</version>
     </parent>
+
+    <properties>
+        <choerodon.starter.version>0.16.2-SNAPSHOT</choerodon.starter.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.choerodon</groupId>
+                <artifactId>choerodon-gitlab4j-api</artifactId>
+                <version>${choerodon.starter.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>io.choerodon</groupId>
+                    <artifactId>choerodon-maven-plugin</artifactId>
+                    <version>${choerodon.starter.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>convert</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
     <repositories>
         <repository>
