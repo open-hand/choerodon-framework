@@ -15,7 +15,7 @@
     <parent>
         <groupId>org.hzero</groupId>
         <artifactId>hzero-parent</artifactId>
-        <version>1.4.4.BETA</version>
+        <version>1.4.8.BETA</version>
     </parent>
 
     <properties>
