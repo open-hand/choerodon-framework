@@ -25,12 +25,22 @@ maven-deploy-choerodon:
     - tags
     - /^release-.*$/
 
-maven-deploy-ossrh:
+maven-deploy-release:
   stage: maven-deploy
   script:
-    - mvn clean source:jar-no-fork javadoc:jar install -DskipTests=true gpg:sign deploy -DaltDeploymentRepository=${OSS_REPOSITORY_ID}::default::${OSS_REPOSITORY_URL} -DpomFile=pom.xml
+    - mvn clean install -DskipTests=true deploy -DaltDeploymentRepository=${CHOERODON_REPOSITORY_ID}::default::${CHOERODON_RELEASE_URL}
   only:
+#    - master
     - tags
+    - /^hotfix-.*$/
+    - /^release-.*$/
+
+#maven-deploy-ossrh:
+#  stage: maven-deploy
+#  script:
+#    - mvn clean source:jar-no-fork javadoc:jar install -DskipTests=true gpg:sign deploy -DaltDeploymentRepository=${OSS_REPOSITORY_ID}::default::${OSS_REPOSITORY_URL} -DpomFile=pom.xml
+#  only:
+#    - tags
 
 .auto_devops: &auto_devops |
     curl -o .auto_devops.sh \
