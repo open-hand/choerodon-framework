@@ -30,7 +30,6 @@ maven-deploy-release:
   script:
     - mvn clean install -DskipTests=true deploy -DaltDeploymentRepository=${CHOERODON_REPOSITORY_ID}::default::${CHOERODON_RELEASE_URL}
   only:
-#    - master
     - tags
     - /^hotfix-.*$/
     - /^release-.*$/
