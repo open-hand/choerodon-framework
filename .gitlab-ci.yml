@@ -24,6 +24,7 @@ maven-deploy-choerodon:
     - master
     - tags
     - /^release-.*$/
+    - /^hotfix-.*-alpha.*$/
 
 maven-deploy-ossrh:
   stage: maven-deploy
