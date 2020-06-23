@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.13.0.RELEASE</version>
+    <version>0.18.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -13,138 +13,53 @@
     <url>https://github.com/choerodon/choerodon/choerodon-framework</url>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>org.hzero</groupId>
+        <artifactId>hzero-parent</artifactId>
+        <version>1.4.4.BETA</version>
     </parent>
-    <developers>
-        <developer>
-            <name>dongfan</name>
-            <email>fan@choerodon.io</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-        <developer>
-            <name>flyleft</name>
-            <email>jcalaz@163.com</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-        <developer>
-            <name>superlee</name>
-            <email>superleader8@gmail.com</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-        <developer>
-            <name>wuguokai</name>
-            <email>guokai.wu.work@gmail.com</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-        <developer>
-            <name>longhe1996</name>
-            <email>longhe1996@foxmail.com</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-    </developers>
+
     <properties>
-        <skipTests>true</skipTests>
-        <java.version>1.8</java.version>
-        <choerodon.serviceBuild>false</choerodon.serviceBuild>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <choerodon.mainClass>io.choerodon.boot.ChoerodonApplication</choerodon.mainClass>
-        <choerodon.starters.version>0.13.0-SNAPSHOT</choerodon.starters.version>
+        <choerodon.starter.version>0.18.0-SNAPSHOT</choerodon.starter.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR2</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>io.choerodon</groupId>
+                <artifactId>choerodon-gitlab4j-api</artifactId>
+                <version>${choerodon.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-starter-parent</artifactId>
-                <version>${choerodon.starters.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <artifactId>choerodon-tool-liquibase</artifactId>
+                <version>${choerodon.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.choerodon</groupId>
+                <artifactId>choerodon-starter-asgard</artifactId>
+                <version>${choerodon.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.choerodon</groupId>
+                <artifactId>choerodon-starter-core</artifactId>
+                <version>${choerodon.starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-    </dependencies>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <configuration>
-                        <mainClass>${choerodon.mainClass}</mainClass>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.gmavenplus</groupId>
-                <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.6.3</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compileTests</goal>
-                            <goal>addTestSources</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/*Spec.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-maven-plugin</artifactId>
-                <version>${choerodon.starters.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>convert</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <serviceBuild>${choerodon.serviceBuild}</serviceBuild>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <repositories>
+        <repository>
+            <id>HzeroRelease</id>
+            <name>Hzero-Release Repository</name>
+            <url>http://nexus.saas.hand-china.com/content/repositories/Hzero-Release/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>HzeroSnapshot</id>
+            <name>Hzero-Snapshot Repository</name>
+            <url>http://nexus.saas.hand-china.com/content/repositories/Hzero-Snapshot/</url>
+        </repository>
+    </repositories>
 </project>
