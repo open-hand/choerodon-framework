@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.17.1.BETA</version>
+    <version>0.17.2.BETA</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -24,6 +24,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.hzero.starter</groupId>
+                <artifactId>hzero-starter-export</artifactId>
+                <version>1.4.4.1.BETA</version>
+            </dependency>
             <dependency>
                 <groupId>org.hzero</groupId>
                 <artifactId>hzero-iam-saas</artifactId>
