@@ -19,7 +19,7 @@
     </parent>
 
     <properties>
-        <choerodon.starter.version>0.17.1.BETA</choerodon.starter.version>
+        <choerodon.starter.version>0.17.2.BETA</choerodon.starter.version>
     </properties>
 
     <dependencyManagement>
