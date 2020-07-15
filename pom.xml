@@ -15,11 +15,11 @@
     <parent>
         <groupId>org.hzero</groupId>
         <artifactId>hzero-parent</artifactId>
-        <version>1.4.0-BETA.1</version>
+        <version>1.4.0.RELEASE</version>
     </parent>
 
     <properties>
-        <choerodon.starter.version>0.17.0.RELEASE</choerodon.starter.version>
+        <choerodon.starter.version>0.17.1.RELEASE</choerodon.starter.version>
     </properties>
 
     <dependencyManagement>
