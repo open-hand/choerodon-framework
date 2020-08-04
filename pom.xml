@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.17.1.RELEASE</version>
+    <version>0.17.2.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -19,7 +19,7 @@
     </parent>
 
     <properties>
-        <choerodon.starter.version>0.17.1.RELEASE</choerodon.starter.version>
+        <choerodon.starter.version>0.17.2.RELEASE</choerodon.starter.version>
     </properties>
 
     <dependencyManagement>
