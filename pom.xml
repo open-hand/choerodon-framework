@@ -31,7 +31,7 @@
             </dependency>
             <dependency>
                 <groupId>org.hzero</groupId>
-                <artifactId>hzero-iam</artifactId>
+                <artifactId>hzero-iam-saas</artifactId>
                 <version>1.4.1-BETA.3</version>
             </dependency>
             <dependency>
