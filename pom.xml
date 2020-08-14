@@ -35,6 +35,11 @@
                 <version>1.4.1-BETA.3</version>
             </dependency>
             <dependency>
+                <groupId>org.hzero</groupId>
+                <artifactId>hzero-iam</artifactId>
+                <version>1.4.1-BETA.3</version>
+            </dependency>
+            <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-gitlab4j-api</artifactId>
                 <version>${choerodon.starter.version}</version>
