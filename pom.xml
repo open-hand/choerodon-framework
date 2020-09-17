@@ -19,6 +19,7 @@
     </parent>
 
     <properties>
+        <skipTests>true</skipTests>
         <choerodon.starter.version>0.18.0-SNAPSHOT</choerodon.starter.version>
     </properties>
 
@@ -62,4 +63,35 @@
             <url>http://nexus.saas.hand-china.com/content/repositories/Hzero-Snapshot/</url>
         </repository>
     </repositories>
+
+    <build>
+        <plugins>
+            <!--使用spock测试框架需要添加groovy编译插件-->
+            <plugin>
+                <groupId>org.codehaus.gmavenplus</groupId>
+                <artifactId>gmavenplus-plugin</artifactId>
+                <version>1.9.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>addTestSources</goal>
+                            <goal>compileTests</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--maven测试插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!--添加要测试的类-->
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*Spec.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
