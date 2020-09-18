@@ -20,6 +20,7 @@
 
     <properties>
         <skipTests>true</skipTests>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
         <choerodon.starter.version>0.18.0-SNAPSHOT</choerodon.starter.version>
     </properties>
 
