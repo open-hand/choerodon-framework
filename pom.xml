@@ -46,6 +46,17 @@
                 <artifactId>choerodon-starter-core</artifactId>
                 <version>${choerodon.starter.version}</version>
             </dependency>
+            <!--hzero发新版本删除-->
+            <dependency>
+                <groupId>org.hzero</groupId>
+                <artifactId>hzero-iam</artifactId>
+                <version>1.5.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hzero</groupId>
+                <artifactId>hzero-iam-saas</artifactId>
+                <version>1.5.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
