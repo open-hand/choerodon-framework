@@ -1,57 +1,50 @@
-image: registry.cn-hangzhou.aliyuncs.com/choerodon-tools/cibase:0.5.0
+include: https://api.choerodon.com.cn/devops/v1/projects/1529/ci_contents/pipelines/34475434-89ed-461c-a414-ab64691bb880/content.yaml
 
-stages:
-  - mvn-package
-  - maven-deploy
-
-maven-test-branches:
-  stage: mvn-package
-  script:
-    - mvn package source:jar-no-fork javadoc:jar -DskipTests=false
-  only:
-    - branches
-  except:
-    - master
-    - tags
-    - /^release-.*$/
-    - /^hotfix-.*$/
-
-maven-deploy-choerodon:
-  stage: maven-deploy
-  script:
-    - mvn clean install -DskipTests=true deploy -DaltDeploymentRepository=${CHOERODON_REPOSITORY_ID}::default::${CHOERODON_REPOSITORY_URL}
-  only:
-    - master
-    - tags
-    - /^release-.*$/
-
-maven-deploy-release:
-  stage: maven-deploy
-  script:
-    - mvn clean install -DskipTests=true deploy -DaltDeploymentRepository=${CHOERODON_REPOSITORY_ID}::default::${CHOERODON_RELEASE_URL}
-  only:
-    - tags
-    - /^hotfix-.*$/
-    - /^release-.*$/
-
+#image: registry.cn-hangzhou.aliyuncs.com/choerodon-tools/cibase:0.5.0
+#
+#stages:
+#  - mvn-package
+#  - maven-deploy
+#
+#maven-test-branches:
+#  stage: mvn-package
+#  script:
+#    - mvn package source:jar-no-fork javadoc:jar -DskipTests=false
+#  only:
+#    - branches
+#  except:
+#    - master
+#    - tags
+#    - /^release-.*$/
+#    - /^hotfix-.*$/
+#
+#maven-deploy-choerodon:
+#  stage: maven-deploy
+#  script:
+#    - mvn clean install -DskipTests=true deploy -DaltDeploymentRepository=${CHOERODON_REPOSITORY_ID}::default::${CHOERODON_REPOSITORY_URL}
+#  only:
+#    - master
+#    - tags
+#    - /^release-.*$/
+#
 #maven-deploy-ossrh:
 #  stage: maven-deploy
 #  script:
 #    - mvn clean source:jar-no-fork javadoc:jar install -DskipTests=true gpg:sign deploy -DaltDeploymentRepository=${OSS_REPOSITORY_ID}::default::${OSS_REPOSITORY_URL} -DpomFile=pom.xml
 #  only:
 #    - tags
-
-.auto_devops: &auto_devops |
-    curl -o .auto_devops.sh \
-        "${CHOERODON_URL}/devops/ci?token=${Token}&type=lib"
-    source .auto_devops.sh
-
-    function git_merge(){
-        git config user.name ${GITLAB_USER_NAME}
-        git config user.email ${GITLAB_USER_EMAIL}
-        git checkout origin/${1:-"develop"}
-        git merge ${CI_COMMIT_SHA} --no-commit --no-ff
-    }
-
-before_script:
-  - *auto_devops
+#
+#.auto_devops: &auto_devops |
+#    curl -o .auto_devops.sh \
+#        "${CHOERODON_URL}/devops/ci?token=${Token}&type=lib"
+#    source .auto_devops.sh
+#
+#    function git_merge(){
+#        git config user.name ${GITLAB_USER_NAME}
+#        git config user.email ${GITLAB_USER_EMAIL}
+#        git checkout origin/${1:-"develop"}
+#        git merge ${CI_COMMIT_SHA} --no-commit --no-ff
+#    }
+#
+#before_script:
+#  - *auto_devops
