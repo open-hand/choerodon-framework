@@ -25,16 +25,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.hzero.starter</groupId>
-                <artifactId>hzero-starter-keyencrypt</artifactId>
-                <version>1.4.1-BETA.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hzero</groupId>
-                <artifactId>hzero-iam-saas</artifactId>
-                <version>1.4.1-BETA.3</version>
-            </dependency>
-            <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-gitlab4j-api</artifactId>
                 <version>${choerodon.starter.version}</version>
@@ -59,6 +49,14 @@
 
     <repositories>
         <repository>
+            <id>HandPublic</id>
+            <name>Hand-Public Repository</name>
+            <url>http://nexus.saas.hand-china.com/content/repositories/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
             <id>HzeroRelease</id>
             <name>Hzero-Release Repository</name>
             <url>http://nexus.saas.hand-china.com/content/repositories/Hzero-Release/</url>
@@ -70,6 +68,10 @@
             <id>HzeroSnapshot</id>
             <name>Hzero-Snapshot Repository</name>
             <url>http://nexus.saas.hand-china.com/content/repositories/Hzero-Snapshot/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
         </repository>
     </repositories>
 </project>
