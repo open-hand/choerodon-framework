@@ -47,6 +47,11 @@
                 <artifactId>choerodon-starter-core</artifactId>
                 <version>${choerodon.starter.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.choerodon</groupId>
+                <artifactId>choerodon-starter-fragment</artifactId>
+                <version>${choerodon.starter.version}</version>
+            </dependency>
 
             <!--框架服务版本-->
             <dependency>
