@@ -20,7 +20,7 @@
     ├─ choerodon-file                                    文件服务
     ├─ choerodon-monitor                                 监控服务
     ├─ choerodon-message                                 消息服务
-    ├─ agile-service                                     消息服务
+    ├─ agile-service                                     敏捷服务
     ├─ knowledgebase-service                             知识服务
     ├─ test-manager-service                              测试服务
     ├─ devops-service                                    devops服务
