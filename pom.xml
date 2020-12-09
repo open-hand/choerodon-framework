@@ -146,13 +146,13 @@
             <!--制品库服务-->
             <dependency>
                 <groupId>org.hrds.rducm</groupId>
-                <artifactId>hrds-code-repo</artifactId>
-                <version>0.24.0-alpha.4</version>
+                <artifactId>code-repo-service</artifactId>
+                <version>0.24.0-alpha.5.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.hrds.rdupm</groupId>
-                <artifactId>hrds-prod-repo</artifactId>
-                <version>0.24.0-alpha.6</version>
+                <artifactId>prod-repo-service</artifactId>
+                <version>0.24.0-alpha.7.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
