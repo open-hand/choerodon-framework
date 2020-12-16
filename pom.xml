@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.18.0-alpha.0.RELEASE</version>
+    <version>0.18.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -15,13 +15,13 @@
     <parent>
         <groupId>org.hzero</groupId>
         <artifactId>hzero-parent</artifactId>
-        <version>1.5.0.RELEASE</version>
+        <version>1.5.2.RELEASE</version>
     </parent>
 
     <properties>
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-        <choerodon.starter.version>0.18.0.RELEASE</choerodon.starter.version>
+        <choerodon.starter.version>0.18.1-SNAPSHOT</choerodon.starter.version>
         <choerodon.service.version>0.24.0-SNAPSHOT</choerodon.service.version>
     </properties>
 
@@ -57,102 +57,102 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-iam</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-platform</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-admin</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-gateway</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-register</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-oauth</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-message</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-file</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-monitor</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-asgard</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-swagger</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
 
             <!--敏捷服务-->
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>agile-service</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>knowledgebase-service</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>test-manager-service</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
 
             <!--devops服务-->
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>devops-service</artifactId>
-                <version>0.24.0-alpha.9.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>workflow-service</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>gitlab-service</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <!--制品库服务-->
             <dependency>
                 <groupId>org.hrds.rducm</groupId>
                 <artifactId>code-repo-service</artifactId>
-                <version>0.24.0-alpha.5.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hrds.rdupm</groupId>
                 <artifactId>prod-repo-service</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
+                <version>{choerodon.service.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
