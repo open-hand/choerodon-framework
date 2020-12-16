@@ -57,102 +57,102 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-iam</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-platform</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-admin</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-gateway</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-register</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-oauth</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-message</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-file</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-monitor</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-asgard</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-swagger</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
 
             <!--敏捷服务-->
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>agile-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>knowledgebase-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>test-manager-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
 
             <!--devops服务-->
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>devops-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>workflow-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>gitlab-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <!--制品库服务-->
             <dependency>
                 <groupId>org.hrds.rducm</groupId>
                 <artifactId>code-repo-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hrds.rdupm</groupId>
                 <artifactId>prod-repo-service</artifactId>
-                <version>{choerodon.service.version}</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
