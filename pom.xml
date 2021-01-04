@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.18.0-alpha.0.RELEASE</version>
+    <version>0.18.0.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -22,7 +22,6 @@
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <choerodon.starter.version>0.18.0.RELEASE</choerodon.starter.version>
-        <choerodon.service.version>0.24.0-SNAPSHOT</choerodon.service.version>
     </properties>
 
     <dependencyManagement>
@@ -51,108 +50,6 @@
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-starter-fragment</artifactId>
                 <version>${choerodon.starter.version}</version>
-            </dependency>
-
-            <!--框架服务版本-->
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-iam</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-platform</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-admin</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-gateway</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-register</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-oauth</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-message</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-file</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-monitor</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-asgard</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>choerodon-swagger</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
-            </dependency>
-
-            <!--敏捷服务-->
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>agile-service</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>knowledgebase-service</artifactId>
-                <version>0.24.0-alpha.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>test-manager-service</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
-            </dependency>
-
-            <!--devops服务-->
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>devops-service</artifactId>
-                <version>0.24.0-alpha.9.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>workflow-service</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.choerodon</groupId>
-                <artifactId>gitlab-service</artifactId>
-                <version>0.24.0-alpha.3.RELEASE</version>
-            </dependency>
-            <!--制品库服务-->
-            <dependency>
-                <groupId>org.hrds.rducm</groupId>
-                <artifactId>code-repo-service</artifactId>
-                <version>0.24.0-alpha.5.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hrds.rdupm</groupId>
-                <artifactId>prod-repo-service</artifactId>
-                <version>0.24.0-alpha.7.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
