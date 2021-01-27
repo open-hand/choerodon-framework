@@ -15,7 +15,7 @@
     <parent>
         <groupId>org.hzero</groupId>
         <artifactId>hzero-parent</artifactId>
-        <version>1.5.2.RELEASE</version>
+        <version>1.5.3.RELEASE</version>
     </parent>
 
     <properties>
@@ -57,7 +57,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-iam</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.24.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -82,7 +82,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-oauth</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.24.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -114,7 +114,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>agile-service</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.24.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -124,14 +124,14 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>test-manager-service</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.24.1.RELEASE</version>
             </dependency>
 
             <!--devops服务-->
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>devops-service</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.24.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -147,12 +147,12 @@
             <dependency>
                 <groupId>org.hrds.rducm</groupId>
                 <artifactId>code-repo-service</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.24.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.hrds.rdupm</groupId>
                 <artifactId>prod-repo-service</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.24.1.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
