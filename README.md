@@ -26,8 +26,8 @@
     ├─ devops-service                                    devops服务
     ├─ workflow-service                                  工作流服务
     ├─ gitlab-service                                    gitlab服务
-    ├─ hrds-prod-repo                                    制品库服务
-    ├─ hrds-code-repo                                    代码库服务
+    ├─ prod-repo-service                                 制品库服务
+    ├─ code-repo-service                                 代码库服务
     ├─ hzero-parent                                      HZERO父依赖
     └─ choerodon-starter-parent                          通用开发父组件
         ├─ choerodon-gitlab4j-api                             gitlab api组件
