@@ -27,6 +27,22 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--  升级到hzero1.6时删除-->
+            <dependency>
+                <groupId>org.hzero</groupId>
+                <artifactId>hzero-message-saas</artifactId>
+                <version>1.6.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hzero.boot</groupId>
+                <artifactId>hzero-boot-message</artifactId>
+                <version>1.6.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hzero.starter</groupId>
+                <artifactId>hzero-starter-websocket</artifactId>
+                <version>1.6.0.RELEASE</version>
+            </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-gitlab4j-api</artifactId>
@@ -188,31 +204,31 @@
     <build>
         <plugins>
             <!--使用spock测试框架需要添加groovy编译插件-->
-<!--            <plugin>-->
-<!--                <groupId>org.codehaus.gmavenplus</groupId>-->
-<!--                <artifactId>gmavenplus-plugin</artifactId>-->
-<!--                <version>1.9.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>addTestSources</goal>-->
-<!--                            <goal>compileTests</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.codehaus.gmavenplus</groupId>-->
+            <!--                <artifactId>gmavenplus-plugin</artifactId>-->
+            <!--                <version>1.9.0</version>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <goals>-->
+            <!--                            <goal>addTestSources</goal>-->
+            <!--                            <goal>compileTests</goal>-->
+            <!--                        </goals>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
             <!--maven测试插件-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash;添加要测试的类&ndash;&gt;-->
-<!--                    <includes>-->
-<!--                        <include>**/*Test.java</include>-->
-<!--                        <include>**/*Spec.java</include>-->
-<!--                    </includes>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-surefire-plugin</artifactId>-->
+            <!--                <configuration>-->
+            <!--                    &lt;!&ndash;添加要测试的类&ndash;&gt;-->
+            <!--                    <includes>-->
+            <!--                        <include>**/*Test.java</include>-->
+            <!--                        <include>**/*Spec.java</include>-->
+            <!--                    </includes>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 </project>
