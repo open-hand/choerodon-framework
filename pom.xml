@@ -159,6 +159,11 @@
                 <artifactId>gitlab-service</artifactId>
                 <version>${choerodon.service.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.choerodon</groupId>
+                <artifactId>market-service</artifactId>
+                <version>${choerodon.service.version}</version>
+            </dependency>
             <!--制品库服务-->
             <dependency>
                 <groupId>org.hrds.rducm</groupId>
