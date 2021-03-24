@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.19.0.RELEASE</version>
+    <version>0.19.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -15,34 +15,18 @@
     <parent>
         <groupId>org.hzero</groupId>
         <artifactId>hzero-parent</artifactId>
-        <version>1.5.3.RELEASE</version>
+        <version>1.6.1.RELEASE</version>
     </parent>
 
     <properties>
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-        <choerodon.starter.version>0.19.0.RELEASE</choerodon.starter.version>
+        <choerodon.starter.version>0.19.1-SNAPSHOT</choerodon.starter.version>
         <choerodon.service.version>0.25.0-alpha.1.RELEASE</choerodon.service.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!--  升级到hzero1.6时删除-->
-            <dependency>
-                <groupId>org.hzero</groupId>
-                <artifactId>hzero-message-saas</artifactId>
-                <version>1.6.0.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hzero.boot</groupId>
-                <artifactId>hzero-boot-message</artifactId>
-                <version>1.6.0.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hzero.starter</groupId>
-                <artifactId>hzero-starter-websocket</artifactId>
-                <version>1.6.0.RELEASE</version>
-            </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-gitlab4j-api</artifactId>
