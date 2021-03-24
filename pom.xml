@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.19.0-SNAPSHOT</version>
+    <version>0.19.0.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -21,12 +21,28 @@
     <properties>
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-        <choerodon.starter.version>0.19.0-SNAPSHOT</choerodon.starter.version>
-        <choerodon.service.version>0.24.0-SNAPSHOT</choerodon.service.version>
+        <choerodon.starter.version>0.19.0.RELEASE</choerodon.starter.version>
+        <choerodon.service.version>0.25.0-alpha.1.RELEASE</choerodon.service.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!--  升级到hzero1.6时删除-->
+            <dependency>
+                <groupId>org.hzero</groupId>
+                <artifactId>hzero-message-saas</artifactId>
+                <version>1.6.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hzero.boot</groupId>
+                <artifactId>hzero-boot-message</artifactId>
+                <version>1.6.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hzero.starter</groupId>
+                <artifactId>hzero-starter-websocket</artifactId>
+                <version>1.6.0.RELEASE</version>
+            </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-gitlab4j-api</artifactId>
@@ -57,7 +73,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-iam</artifactId>
-                <version>0.24.1.RELEASE</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -82,7 +98,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-oauth</artifactId>
-                <version>0.24.2.RELEASE</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -114,7 +130,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>agile-service</artifactId>
-                <version>0.24.2.RELEASE</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -124,14 +140,14 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>test-manager-service</artifactId>
-                <version>0.24.1.RELEASE</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
 
             <!--devops服务-->
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>devops-service</artifactId>
-                <version>0.24.2.RELEASE</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -143,16 +159,21 @@
                 <artifactId>gitlab-service</artifactId>
                 <version>${choerodon.service.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.choerodon</groupId>
+                <artifactId>market-service</artifactId>
+                <version>${choerodon.service.version}</version>
+            </dependency>
             <!--制品库服务-->
             <dependency>
                 <groupId>org.hrds.rducm</groupId>
                 <artifactId>code-repo-service</artifactId>
-                <version>0.24.1.RELEASE</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hrds.rdupm</groupId>
                 <artifactId>prod-repo-service</artifactId>
-                <version>0.24.1.RELEASE</version>
+                <version>${choerodon.service.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -185,34 +206,4 @@
         </repository>
     </repositories>
 
-    <build>
-        <plugins>
-            <!--使用spock测试框架需要添加groovy编译插件-->
-<!--            <plugin>-->
-<!--                <groupId>org.codehaus.gmavenplus</groupId>-->
-<!--                <artifactId>gmavenplus-plugin</artifactId>-->
-<!--                <version>1.9.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>addTestSources</goal>-->
-<!--                            <goal>compileTests</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-            <!--maven测试插件-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash;添加要测试的类&ndash;&gt;-->
-<!--                    <includes>-->
-<!--                        <include>**/*Test.java</include>-->
-<!--                        <include>**/*Spec.java</include>-->
-<!--                    </includes>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-        </plugins>
-    </build>
 </project>
