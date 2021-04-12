@@ -22,7 +22,7 @@
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <choerodon.starter.version>0.19.1.RELEASE</choerodon.starter.version>
-        <choerodon.service.version>0.25.0-SNAPSHOT</choerodon.service.version>
+        <choerodon.service.version>0.25.0.RELEASE</choerodon.service.version>
         <groovy.version>2.4.6</groovy.version>
     </properties>
 
@@ -78,7 +78,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-register</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.25.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
@@ -132,7 +132,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>devops-service</artifactId>
-                <version>${choerodon.service.version}</version>
+                <version>0.25.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
