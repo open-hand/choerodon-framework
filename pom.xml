@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>0.19.1.RELEASE</version>
+    <version>1.0.0.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -21,8 +21,8 @@
     <properties>
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-        <choerodon.starter.version>0.19.1.RELEASE</choerodon.starter.version>
-        <choerodon.service.version>0.25.0.RELEASE</choerodon.service.version>
+        <choerodon.starter.version>1.0.0.RELEASE</choerodon.starter.version>
+        <choerodon.service.version>1.0.0.RELEASE</choerodon.service.version>
         <groovy.version>2.4.6</groovy.version>
     </properties>
 
