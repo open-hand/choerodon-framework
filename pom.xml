@@ -22,7 +22,7 @@
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <choerodon.starter.version>1.0.0.RELEASE</choerodon.starter.version>
-        <choerodon.service.version>1.0.0-SNAPSHOT</choerodon.service.version>
+        <choerodon.service.version>1.0.0.RELEASE</choerodon.service.version>
         <groovy.version>2.4.6</groovy.version>
     </properties>
 
