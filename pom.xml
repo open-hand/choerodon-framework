@@ -98,7 +98,7 @@
             <dependency>
                 <groupId>io.choerodon</groupId>
                 <artifactId>choerodon-starter-asgard</artifactId>
-                <version>${choerodon.starter.version}</version>
+                <version>1.1.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.choerodon</groupId>
