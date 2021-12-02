@@ -24,17 +24,10 @@
         <choerodon.starter.version>1.1.1.RELEASE</choerodon.starter.version>
         <choerodon.service.version>1.1.0.RELEASE</choerodon.service.version>
         <groovy.version>2.4.6</groovy.version>
-        <hrds.boot.version>1.1.0.RELEASE</hrds.boot.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.hrds.boot</groupId>
-                <artifactId>hrds-boot-sonarqube</artifactId>
-                <version>${hrds.boot.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
@@ -293,23 +286,6 @@
         </repository>
     </distributionManagement>
     <repositories>
-        <repository>
-            <id>hrds-release</id>
-            <name>HRDS Release</name>
-            <url>http://nexus.saas.hand-china.com/content/repositories/hrds-release</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>hrds-snapshot</id>
-            <name>HRDS Snapshot</name>
-            <url>http://nexus.saas.hand-china.com/content/repositories/hrds-snapshot</url>
-            <releases>
-                <enabled>false</enabled>
-                <updatePolicy>always</updatePolicy>
-            </releases>
-        </repository>
         <repository>
             <id>HandPublic</id>
             <name>Hand-Public Repository</name>
