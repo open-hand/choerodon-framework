@@ -21,12 +21,31 @@
     <properties>
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-        <choerodon.starter.version>1.2.1-SNAPSHOT</choerodon.starter.version>
+        <choerodon.starter.version>1.2.0.RELEASE</choerodon.starter.version>
         <choerodon.service.version>1.1.0.RELEASE</choerodon.service.version>
+        <com.aliyun.alibaba-dingtalk-service-sdk.version>1.0.1</com.aliyun.alibaba-dingtalk-service-sdk.version>
     </properties>
 
     <dependencyManagement>
+
         <dependencies>
+            <dependency>
+                <groupId>com.thoughtworks.xstream</groupId>
+                <artifactId>xstream</artifactId>
+                <version>1.4.17</version>
+            </dependency>
+            <!--钉钉-->
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>alibaba-dingtalk-service-sdk</artifactId>
+                <version>${com.aliyun.alibaba-dingtalk-service-sdk.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
             <!--starter 服务版本-->
             <dependency>
                 <groupId>io.choerodon</groupId>
