@@ -5,7 +5,7 @@
 
     <groupId>io.choerodon</groupId>
     <artifactId>choerodon-framework-parent</artifactId>
-    <version>1.2.1-SNAPSHOT</version>
+    <version>1.3.0.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>choerodon-framework</name>
@@ -21,9 +21,9 @@
     <properties>
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-        <choerodon.starter.version>1.2.0.RELEASE</choerodon.starter.version>
-        <choerodon.service.version>1.1.0.RELEASE</choerodon.service.version>
-        <com.aliyun.alibaba-dingtalk-service-sdk.version>1.0.1</com.aliyun.alibaba-dingtalk-service-sdk.version>
+        <choerodon.starter.version>1.3.0.RELEASE</choerodon.starter.version>
+        <choerodon.service.version>1.3.0.RELEASE</choerodon.service.version>
+        <com.aliyun.alibaba-dingtalk-service-sdk.version>2.0.0</com.aliyun.alibaba-dingtalk-service-sdk.version>
     </properties>
 
     <dependencyManagement>
