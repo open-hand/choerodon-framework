@@ -30,6 +30,11 @@
 
         <dependencies>
             <dependency>
+                <groupId>org.hzero.starter</groupId>
+                <artifactId>hzero-starter-mybatis-mapper</artifactId>
+                <version>1.8.1.RELEASE</version>
+            </dependency>
+            <dependency>
                 <groupId>com.thoughtworks.xstream</groupId>
                 <artifactId>xstream</artifactId>
                 <version>1.4.17</version>
